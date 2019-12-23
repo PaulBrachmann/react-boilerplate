@@ -3,9 +3,9 @@ import React from "react";
 
 import { Text, View } from "../components";
 import Navigation from "../lib/navigation";
-import defaultTheme from "../theme/default-theme";
-import { RootStore } from "./root-store";
-import { setupRootStore } from "./setup-root-store";
+import defaultTheme from "../theme/defaultTheme";
+import { RootStore } from "./rootStore";
+import { setupRootStore } from "./setupRootStore";
 
 interface RootComponentState {
   rootStore?: RootStore;

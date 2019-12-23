@@ -5,4 +5,4 @@ export interface ThemedProps {
   theme: Theme;
 }
 
-export { default as withTheme } from "./with-theme";
+export { default as withTheme } from "./withTheme";

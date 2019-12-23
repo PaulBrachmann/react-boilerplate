@@ -3,7 +3,7 @@ import React from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 
 import { init } from "../../i18n";
-import defaultTheme from "../../theme/default-theme";
+import defaultTheme from "../../theme/defaultTheme";
 
 const styles: StyleSheet.NamedStyles<any> = {
   root: {

@@ -1,7 +1,7 @@
 import { mixColor } from "../lib/color";
 import ThemeModel from "../models/theme";
-import defaultPalette from "./default-palette";
-import defaultTypography from "./default-typography";
+import defaultPalette from "./defaultPalette";
+import defaultTypography from "./defaultTypography";
 
 /** Returns a new theme instance. */
 const buildTheme = (themeConfig: Partial<typeof ThemeModel.Type> = {}) => {

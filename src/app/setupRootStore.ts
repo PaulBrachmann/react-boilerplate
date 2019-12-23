@@ -1,5 +1,5 @@
 import { init as initI18n } from "../i18n";
-import { RootStore, RootStoreModel } from "./root-store";
+import { RootStore, RootStoreModel } from "./rootStore";
 
 /** The key we'll be saving our state as within async storage. */
 export const ROOT_STATE_STORAGE_KEY = "root";
