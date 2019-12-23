@@ -1,7 +1,6 @@
-import { types } from "mobx-state-tree";
+import RootStoreModel from "../models";
 
-/** The RootStore model. */
-export const RootStoreModel = types.model("RootStore", {});
+export { RootStoreModel };
 
 /** The RootStore's instance type. */
 export type RootStore = typeof RootStoreModel.Type;
