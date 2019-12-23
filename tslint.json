@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "array-type": [true, "array"],
+    "import-name": [false],
+    "interface-name": false,
+    "no-bitwise": false,
+    "no-conditional-assignment": false,
+    "no-console": false,
+    "no-empty-interface": { "severity": "warning" },
+    "no-implicit-dependencies": [true, "dev", ["react-native"]],
+    "no-increment-decrement": false,
+    "no-object-literal-type-assertion": false,
+    "no-submodule-imports": false,
+    "no-var-requires": false,
+    "object-shorthand-properties-first": false,
+    "ter-arrow-parens": [true, "always"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "require-const-for-all-caps",
+      "allow-pascal-case"
+    ]
+  }
+}
