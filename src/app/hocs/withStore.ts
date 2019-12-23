@@ -1,4 +1,4 @@
-import { inject } from "mobx-react";
+import { inject, observer } from "mobx-react";
 
 import { RootStore } from "../rootStore";
 
@@ -9,6 +9,6 @@ export interface StoreProps {
 /** Injects the theme into a component. */
 const withTheme = <P extends object>(
   component: React.ComponentType<P & StoreProps>,
-) => (inject("store")(component) as any) as React.ComponentType<P>;
+) => (inject("store")(observer(component)) as any) as React.ComponentType<P>;
 
 export default withTheme;

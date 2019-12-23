@@ -1,9 +1,9 @@
-import { TextStyle } from "react-native";
+import { TextProps as RNTextProps, TextStyle } from "react-native";
 
 import { BasicProps } from "../types";
 import { TextPresets } from "./text.presets";
 
-export default interface TextProps extends BasicProps<TextStyle> {
+export default interface TextProps extends BasicProps<TextStyle>, RNTextProps {
   /** The key that is looked up via i18n. */
   tx?: string;
 

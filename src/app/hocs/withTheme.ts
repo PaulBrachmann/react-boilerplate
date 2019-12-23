@@ -1,4 +1,4 @@
-import { inject } from "mobx-react";
+import { inject, observer } from "mobx-react";
 
 import { Theme } from "../../theme";
 
@@ -9,6 +9,6 @@ export interface ThemeProps {
 /** Injects the theme into a component. */
 const withTheme = <P extends object>(
   component: React.ComponentType<P & ThemeProps>,
-) => (inject("theme")(component) as any) as React.ComponentType<P>;
+) => (inject("theme")(observer(component)) as any) as React.ComponentType<P>;
 
 export default withTheme;
