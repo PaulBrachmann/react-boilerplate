@@ -6,6 +6,8 @@ import {
 } from "./style";
 import { IStyleSheet } from "./types";
 
+export * from "./types";
+
 const StyleSheet: IStyleSheet = {
   className: () => undefined,
   create: createStyleSheet,

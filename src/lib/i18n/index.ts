@@ -1,2 +1,3 @@
-export { default } from "./i18n";
 export * from "./types";
+
+export { default } from "./i18n";
