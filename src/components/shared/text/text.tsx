@@ -1,9 +1,9 @@
 import React from "react";
 import { Text as RNText } from "react-native";
 
+import { ThemeProps, withTheme } from "../../../app";
 import i18n from "../../../i18n";
 import { StyleSheet } from "../../../lib";
-import { ThemedProps, withTheme } from "../../../theme";
 import presets from "./text.presets";
 import TextProps from "./text.props";
 
@@ -12,7 +12,7 @@ import TextProps from "./text.props";
  *
  * This component is a HOC over the built-in React (Native) one.
  */
-const Text: React.StatelessComponent<TextProps & ThemedProps> = (props) => {
+const Text: React.StatelessComponent<TextProps & ThemeProps> = (props) => {
   const {
     preset = "default",
     theme,

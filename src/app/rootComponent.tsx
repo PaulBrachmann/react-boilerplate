@@ -49,7 +49,7 @@ export default class RootComponent extends React.Component<
     };
 
     return (
-      <Provider rootStore={rootStore} {...otherStores}>
+      <Provider store={rootStore} {...otherStores}>
         <Navigation.Router>
           <View>
             <Text>Test.</Text>

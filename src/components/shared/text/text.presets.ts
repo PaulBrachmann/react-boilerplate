@@ -1,10 +1,10 @@
+import { ThemeProps } from "../../../app";
 import { DynamicStyleSheetKeys, StyleSheet } from "../../../lib";
-import { ThemedProps } from "../../../theme";
 
 /** All text will start off looking like this. */
 const BASE = {
-  color: (props: ThemedProps) => props.theme.colors.text,
-  fontFamily: (props: ThemedProps) => props.theme.typography.primary,
+  color: (props: ThemeProps) => props.theme.colors.text,
+  fontFamily: (props: ThemeProps) => props.theme.typography.primary,
   fontSize: 15,
 };
 
@@ -26,14 +26,14 @@ const presets = StyleSheet.createDynamic({
   /** Field labels that appear on forms above the inputs. */
   fieldLabel: {
     ...BASE,
-    color: (props: ThemedProps) => props.theme.colors.dim,
+    color: (props: ThemeProps) => props.theme.colors.dim,
     fontSize: 13,
   },
 
   /** A smaller piece of secondard information. */
   secondary: {
     ...BASE,
-    color: (props: ThemedProps) => props.theme.colors.dim,
+    color: (props: ThemeProps) => props.theme.colors.dim,
     fontSize: 9,
   },
 });
