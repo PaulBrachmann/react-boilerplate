@@ -1,0 +1,22 @@
+{
+  "common": {
+    "ok": "Ok!",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "date": {
+    "weekday": "{{date, dddd}}",
+    "date-short": "{{date, l}}",
+    "time": "{{date, LT}}",
+    "time-12": "{{date, h.m a}}",
+    "time-24": "{{date, H.m}}"
+  },
+  "errors": {},
+  "storybook": {
+    "placeholder": "Placeholder",
+    "field": "Field"
+  },
+  "__tests__": {
+    "key": "It works!"
+  }
+}

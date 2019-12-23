@@ -1,3 +1,4 @@
+import { init as initI18n } from "../i18n";
 import { RootStore, RootStoreModel } from "./root-store";
 
 /** The key we'll be saving our state as within async storage. */
@@ -22,7 +23,7 @@ export async function setupRootStore() {
  */
 export async function createEnvironment() {
   // allow each service to setup
-  // ...
+  await initI18n();
 
   return {};
 }
