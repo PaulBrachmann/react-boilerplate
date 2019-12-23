@@ -2,6 +2,7 @@ import { Provider } from "mobx-react";
 import React from "react";
 import { Text } from "react-native";
 
+import Navigation from "../lib/navigation";
 import defaultTheme from "../theme/default-theme";
 import { RootStore } from "./root-store";
 import { setupRootStore } from "./setup-root-store";
@@ -49,7 +50,9 @@ export default class RootComponent extends React.Component<
 
     return (
       <Provider rootStore={rootStore} {...otherStores}>
-        <Text>Test.</Text>
+        <Navigation.Router>
+          <Text>Test.</Text>
+        </Navigation.Router>
       </Provider>
     );
   }
